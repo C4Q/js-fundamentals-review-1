@@ -7,7 +7,7 @@
 //write a function to console log last value in array
 function logLast(arr) {
   //Your code here:
-
+  console.log(arr.length - 1)
 }
 
 logLast(['dog', 'cat', 'bat']); //logs 'bat'
@@ -17,7 +17,7 @@ logLast(['dog', 'cat', 'bat']); //logs 'bat'
 function logTen() {
   for(var i = 0; i <= 10; i++) {
     //Your code here:
-
+    console.log(i)
   }
 }
 
@@ -27,7 +27,7 @@ logTen(); //logs numbers 0 - 10
 function logArr(arr) {
   for(var i = 0; i < arr.length; i++) {
     //Your code here:
-
+    console.log(arr[i])
   }
 }
 
@@ -37,7 +37,7 @@ logArr(['dog', 'cat', 'bat']); //logs 'dog', 'cat', 'bat'
 function logArrI(arr) {
   for(var i = 0; i < arr.length; i++) {
     //Your code here:
-
+    console.log(i)
   }
 }
 
@@ -48,7 +48,7 @@ function sumZeroToTen(arr) {
   var sum = 0;
   for(var i = 0; i <= 10; i++) {
     //Your code here:
-
+    sum += i
   }
   return sum;
 }
@@ -60,7 +60,7 @@ function sumArr(arr) {
   var sum = 0;
   for(var i = 0; i < arr.length; i++) {
     //Your code here:
-
+    sum += arr[i]
   }
   return sum;
 }
@@ -72,7 +72,7 @@ function sumArrI(arr) {
   var sum = 0;
   for(var i = 0; i < arr.length; i++) {
     //Your code here:
-
+    sum += i
   }
   return sum;
 }
@@ -84,7 +84,11 @@ sumArrI([10, 20, 30, 40, 50]); //10
 function logValOrI(arr) {
   for(var i = 0; i < arr.length; i++) {
     //Your code here:
-
+    if(i <= arr[i]) {
+      console.log(i)
+    } else {
+      console.log(arr[i])
+    }
   }
 }
 
@@ -94,7 +98,7 @@ logValOrI([10, 5, 3, 1, 0]); //logs: 10, 5, 3, 3, 4
 function forEachLog(arr) {
   arr.forEach(function(val) {
     //Your code here:
-
+    console.log(val)
   })
 }
 
@@ -105,7 +109,7 @@ function forEachSum(arr) {
   var sum = 0;
   arr.forEach(function(val) {
    //Your code here:
-
+   sum += val
   })
   return sum;
 }
